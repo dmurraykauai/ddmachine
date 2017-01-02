@@ -1,9 +1,6 @@
-// src/components/Stocks/index.js
 import React, { PropTypes, Component } from 'react';
 import classnames from 'classnames';
-import Header from '../Common/header';
-
-
+import HeaderReactstrap from '../Common/header_reactstrap';
 
 export default class About extends Component {
     // static propTypes = {}
@@ -14,7 +11,7 @@ export default class About extends Component {
         const { className, ...props } = this.props;
         return (
             <div className={classnames('Stocks', className)} {...props}>
-                <Header loading={this.props.loading}/>
+                <HeaderReactstrap/>
                 <h1>
                     Stockings!!!
                 </h1>

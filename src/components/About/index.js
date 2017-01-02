@@ -1,8 +1,6 @@
-// src/components/About/index.js
-import React, { PropTypes, Component } from 'react';
+import React, {PropTypes, Component} from 'react';
 import classnames from 'classnames';
-import Header from '../Common/header';
-
+import HeaderReactstrap from '../Common/header_reactstrap';
 import './style.css';
 
 export default class About extends Component {
@@ -11,10 +9,10 @@ export default class About extends Component {
     // state = {}
 
     render() {
-        const { className, ...props } = this.props;
+        const {className, ...props} = this.props;
         return (
             <div className={classnames('About', className)} {...props}>
-                <Header loading={this.props.loading}/>
+                <HeaderReactstrap/>
                 <h1>
                     About
                 </h1>
